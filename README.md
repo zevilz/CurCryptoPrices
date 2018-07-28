@@ -4,7 +4,7 @@ The script gets current cryptocurrencies prices from [cryptocompare.com](https:/
 
 Data structure in file like below:
 ```bash
-{"BTC":{"USD":8172.9,"BTC":1,"RUB":506409.2},"ETH":{"USD":467.49,"BTC":0.05718,"RUB":28956.48},"XRP":{"USD":0.4521,"BTC":0.00005533,"RUB":28.12},"BCH":{"USD":819.93,"BTC":0.1002,"RUB":50742.2}}
+{"BTC":{"USD":8172.9,"RUB":506409.2},"ETH":{"USD":467.49,"RUB":28956.48},"XRP":{"USD":0.4521,"RUB":28.12}}
 ```
 
 Tested only on Debian 9.x
