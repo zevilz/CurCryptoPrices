@@ -32,11 +32,11 @@ if [ $API_CRYPTOCURRENCIES_ISSET -eq 1 ]; then
 
 	# change permissions to json file like main script
 	if [[ "$OSTYPE" == "linux-gnu" ]]; then
-			SCRIPT_OWNER=$(stat -c "%U:%G" "$0")
-			SCRIPT_PERMS=$(stat -c "%a" "$0")
-		else
-			SCRIPT_OWNER=$(ls -l "$0" | awk '{print $3":"$4}')
-			SCRIPT_PERMS=$(stat -f "%Lp" "$0")
+		SCRIPT_OWNER=$(stat -c "%U:%G" "$0")
+		SCRIPT_PERMS=$(stat -c "%a" "$0")
+	else
+		SCRIPT_OWNER=$(ls -l "$0" | awk '{print $3":"$4}')
+		SCRIPT_PERMS=$(stat -f "%Lp" "$0")
 	fi
 	chown $SCRIPT_OWNER "$JSON_FILE"
 	chmod $SCRIPT_PERMS "$JSON_FILE"
