@@ -9,7 +9,7 @@ Data structure in file like below:
 
 Tested only on Debian 9.x
 
-# API info
+## API info
 - Caching: 10 seconds.
 - Rate limits: hour limit - 100000, minute limit - 2000, second limit - 50.
 
