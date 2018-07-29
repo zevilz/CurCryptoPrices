@@ -17,8 +17,9 @@ Tested only on Debian 9.x
 - [ ] update docs
 - [ ] test script on others distributions and systems
 - [ ] add options
-- [ ] add support for run script more than one time per 1 minute via cron
+- [x] add support for run script more than one time per 1 minute via cron
 - [ ] update TODO :)
 
 ## Changelog
+- 2018.07.29 - 0.2.0 - added support for iterations and iterations delay for run script more than one time per 1 minute via cron, some fixes
 - 2018.07.28 - 0.1.0 - beta released
